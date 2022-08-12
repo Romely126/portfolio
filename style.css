@@ -1,0 +1,58 @@
+/* 도트 폰트 */
+@font-face {
+    font-family: 'HBIOS-SYS';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/HBIOS-SYS.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* 메뉴 */
+/* 메뉴블록 크기 지정 및 margin auto 이용 중앙정렬 */
+#menu {
+    height: 40px;
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    font-family: 'HBIOS-SYS';
+    background-color: white;
+    border-bottom: 2px solid slategrey;
+}
+/* 메뉴 기초설정 */
+#menu ul li {
+    list-style: none;    /* 리스트 앞 점 삭제 */
+    color: slategrey;
+    background-color: white;
+    float: left;    /* 메뉴 좌우정렬 */
+    line-height: 35px;
+    vertical-align: middle;
+    text-align: center;    /* 블록 내에서의 텍스트 중앙정렬 */
+    width: 440px;    /* 길이 */
+}
+/* 선택되지 않은 메뉴에 대한 속성 fontfam*/
+#menu .menuLink {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 440px;    /* 길이 */
+    font-size: 23px;
+    font-weight: blod;
+}
+/* 선택된 메뉴에 대한 속성 fontfam*/
+#menu .selected {
+    text-decoration: none;
+    color: slategrey;
+    border-bottom: 5px solid slategrey;
+    display: block;
+    width: 440px;    /* 길이 */
+    font-size: 23px;
+    outline: 0;
+}
+/* 메뉴에 mouseover되었을때 반응 */
+#menu .menuLink:hover {
+    color: white;
+    background-color: slategrey;
+    border-bottom: 5px solid slategrey;
+}
